@@ -13,7 +13,7 @@
  *  along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  * @brief Decode URF  to a PDF file
- * @file urf_decode.c
+ * @file urf_decode.cpp
  * @author Neil 'Superna' Armstrong <superna9999@gmail.com> (C) 2010
  * @author Tobias Hoffmann <smilingthax@gmail.com> (c) 2012
  */
@@ -27,7 +27,8 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <cups/cups.h>
+#include <arpa/inet.h>   // ntohl
+
 #include <vector>
 #include <qpdf/QPDF.hh>
 #include <qpdf/QPDFWriter.hh>
