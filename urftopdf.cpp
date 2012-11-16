@@ -82,14 +82,6 @@ struct pdf_info
     double page_width,page_height;
 };
 
-#if 0
-void pdf_error_handler(HPDF_STATUS error_no, HPDF_STATUS detail_no, void *user_data)
-{
-    fprintf(stderr, "CRIT: (" PROGRAM ") pdf_error_handler error_no=%04X, detail_no=%u\n", (HPDF_UINT)error_no, (HPDF_UINT)detail_no);
-    exit(1);
-}
-#endif
-
 int create_pdf_file(struct pdf_info * info, unsigned pagecount)
 {
     try {
